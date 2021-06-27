@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kirang+Haerang&display=swap");
+header {
+  background-color: #39a2db;
+}
+header h1 {
+  font-family: "Rubik Mono One", sans-serif;
+  font-size: 35px;
+  margin: 20px;
+  display: inline-block;
+}
+
+nav,
+nav ul {
+  float: right;
+  margin: auto;
+}
+
+.list {
+  margin: 20px;
+  text-decoration: none;
+  font-size: 20px;
+  display: inline-block;
+}
+a {
+  font-family: "Rubik Mono One", sans-serif;
+  text-decoration: none;
+  color: black;
+}
+a:hover {
+  color: chocolate;
+}
+#rest {
+  margin: 25px;
+  font-size: 25px;
+}
+
+ul {
+  margin-bottom: 30px;
+}
+ul li {
+  margin-top: 10;
+  margin-left: 30px;
+  list-style-type: disc;
+}
+.hero {
+  background-color: #a2dbfa;
+  padding-top: 35px;
+  width: 80%;
+  margin-left: 10%;
+  text-align: center;
+  height: 700px;
+}
+.hero img {
+  display: inline-block;
+}
+.hero h2 {
+  font-family: "Rubik Mono One", sans-serif;
+  margin-top: 25px;
+  font-size: 35px;
+}
+.hero p {
+  font-family: "Kirang Haerang", cursive;
+  padding-top: 10px;
+  font-size: 35px;
+}
+footer {
+  font-family: "Rubik Mono One", sans-serif;
+  padding-top: 50px;
+  font-size: 20px;
+  background-color: #39a2db;
+  height: 80px;
+  text-align: center;
+}
