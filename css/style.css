@@ -72,3 +72,10 @@ footer {
   height: 80px;
   text-align: center;
 }
+table {
+  border: 2px solid black;
+}
+th,
+td {
+  border: 1px solid black;
+}
