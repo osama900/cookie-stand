@@ -150,3 +150,18 @@ footer {
   height: 80px;
   text-align: center;
 }
+
+table {
+  font-size: 20px;
+  border: solid black 3px;
+  text-align: center;
+  width: 70%;
+  margin-left: 15%;
+}
+th {
+  font-weight: bolder;
+  border: solid black 3px;
+}
+td {
+  border: solid black 1px;
+}
