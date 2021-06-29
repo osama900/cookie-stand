@@ -1,6 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Kirang+Haerang&display=swap");
+
+main {
+  background-color: #a2dbfa;
+  width: 90%;
+  margin-left: 5%;
+  text-align: center;
+}
 header {
+  width: 100%;
   background-color: #39a2db;
 }
 header h1 {
@@ -64,6 +72,76 @@ ul li {
   padding-top: 10px;
   font-size: 35px;
 }
+
+table {
+  border: 2px solid black;
+}
+th,
+td {
+  border: 1px solid black;
+}
+.familyImg {
+  margin-top: 35px;
+}
+
+.polaroid {
+  display: inline-block;
+  width: 25%;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin: 25px 10px;
+}
+
+.container {
+  background-color: #a8dffdc4;
+  text-align: center;
+  padding: 10px 20px;
+}
+.container p {
+  font-family: "Kirang Haerang", cursive;
+
+  font-weight: bolder;
+}
+.subIMG {
+  height: 150px;
+  width: 100%;
+}
+.subIMG:hover {
+  opacity: 0.6;
+}
+.colOne {
+  height: 350px;
+  width: 45%;
+  float: left;
+  margin-right: 3px;
+  margin-bottom: 20px;
+}
+.colOne a {
+  letter-spacing: 13px;
+  display: block;
+  font-size: 20px;
+  margin: 35px 0px;
+}
+
+.colTwo {
+  width: 45%;
+  float: right;
+}
+.loD {
+  height: 100%;
+  width: 100%;
+  display: block;
+  padding-bottom: 300px;
+}
+iframe {
+  margin: 30px;
+}
+
+#add {
+  font-family: "Rubik Mono One", sans-serif;
+  font-size: 20px;
+}
+
 footer {
   font-family: "Rubik Mono One", sans-serif;
   padding-top: 50px;
@@ -72,6 +150,7 @@ footer {
   height: 80px;
   text-align: center;
 }
+
 table {
   font-size: 20px;
   border: solid black 3px;
