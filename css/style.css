@@ -73,9 +73,16 @@ footer {
   text-align: center;
 }
 table {
-  border: 2px solid black;
+  font-size: 20px;
+  border: solid black 3px;
+  text-align: center;
+  width: 70%;
+  margin-left: 15%;
 }
-th,
+th {
+  font-weight: bolder;
+  border: solid black 3px;
+}
 td {
-  border: 1px solid black;
+  border: solid black 1px;
 }
