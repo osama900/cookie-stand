@@ -165,3 +165,6 @@ th {
 td {
   border: solid black 1px;
 }
+input {
+  margin: 5px;
+}
