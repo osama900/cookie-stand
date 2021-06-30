@@ -165,3 +165,16 @@ th {
 td {
   border: solid black 1px;
 }
+input {
+  margin: 5px;
+}
+form {
+  margin: 0 auto;
+  width: 60%;
+  background-color: cornflowerblue;
+}
+fieldset {
+  padding: 25px;
+  background-color: cornflowerblue;
+  border: 2px solid black;
+}

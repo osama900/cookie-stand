@@ -79,6 +79,7 @@ function makeHeader() {
   headerRow.appendChild(lastTh);
   lastTh.textContent = "Location Total";
 }
+
 makeHeader();
 
 Brach.prototype.render = function () {
@@ -100,14 +101,11 @@ Brach.prototype.render = function () {
 };
 console.log(tableE);
 
-for (let i = 0; i < branchArray.length; i++) {
-  branchArray[i].getCalcCustomerNumEachHour();
-  branchArray[i].getCalCookiesNumEachHour();
+console.log(branchArray);
 
-  branchArray[i].render();
-}
+let footerRow = document.createElement("tr");
+
 function makeFooter() {
-  let footerRow = document.createElement("tr");
   tableE.appendChild(footerRow);
 
   let footerTh = document.createElement("th");
@@ -130,6 +128,40 @@ function makeFooter() {
   let finalTd = document.createElement("td");
   footerRow.appendChild(finalTd);
   finalTd.textContent = megaTotal;
+}
+
+let brachForm = document.getElementById("dataForm");
+brachForm.addEventListener("submit", handelSubmit);
+
+function handelSubmit(event) {
+  event.preventDefault();
+  let newLocationName = event.target.locationNameForm.value;
+  let newMinCustomer = parseInt(event.target.minCustomerForm.value);
+  let newMaxCustomer = parseInt(event.target.maxCustomerForm.value);
+  let newAvgCookies = parseFloat(event.target.avgCookieForm.value);
+
+  //---new branch
+  const newBranch = new Brach(
+    newLocationName,
+    newMinCustomer,
+    newMaxCustomer,
+    newAvgCookies
+  );
+  newBranch.getCalcCustomerNumEachHour();
+  newBranch.getCalCookiesNumEachHour();
+  newBranch.render();
+
+  //console.log(branchArray);
+
+  footerRow.textContent = "";
+
+  makeFooter();
+}
+
+for (let i = 0; i < branchArray.length; i++) {
+  branchArray[i].getCalcCustomerNumEachHour();
+  branchArray[i].getCalCookiesNumEachHour();
+  branchArray[i].render();
 }
 
 makeFooter();
