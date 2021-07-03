@@ -39,8 +39,9 @@ a:hover {
   color: chocolate;
 }
 #rest {
-  margin: 25px;
+  margin-top: 25px;
   font-size: 25px;
+  padding-bottom: 35px;
 }
 
 h2 {
@@ -75,11 +76,16 @@ ul li {
 
 table {
   border: 2px solid black;
+  padding-bottom: 35px;
 }
-th,
+
+th {
+  background-color: rgb(205, 228, 168);
+}
 td {
   border: 1px solid black;
 }
+
 .familyImg {
   margin-top: 35px;
 }
@@ -90,6 +96,9 @@ td {
   background-color: white;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   margin: 25px 10px;
+}
+.polaroid :hover {
+  color: chocolate;
 }
 
 .container {
@@ -102,10 +111,12 @@ td {
 
   font-weight: bolder;
 }
+
 .subIMG {
   height: 150px;
   width: 100%;
 }
+
 .subIMG:hover {
   opacity: 0.6;
 }
